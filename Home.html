@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> MrProds </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- creating navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-light fw-bolder fs-4 fst-italic" href="#"> MrProds </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning active" aria-current="page" href="Home.html"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="#"> Team </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Extras
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-primary" href="#"> Gaming World </a></li>
+                            <li><a class="dropdown-item text-primary" href="#"> Shopping Market </a></li>
+                            <li><a class="dropdown-item text-primary" href="#"> Users Market </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="#"> My Orders </a></li>
+                            <li><a class="dropdown-item text-primary" href="#"> My Account </a></li>
+                            <li><a class="dropdown-item text-primary" href="#"> Settings </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-warning active" aria-current="page" href="#"> Contact us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning active" aria-current="page" href="#"> About us </a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 border border-2 border-light" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-dark border border-2 border-dark fw-bolder" type="submit"> Search
+                    </button> &nbsp;&nbsp;
+                    <button class="btn btn-outline-primary border border-2 border-light text-light"> SignUp </button> &nbsp;&nbsp;
+                    <button class="btn btn-danger"> logIn </button>
+                </form>
+            </div>
+        </div>
+    </nav> <!-- navigation bar ended -->
+
+
+
+    <!-- creating img slider -->
+    <div id="carouselExampleCaptions" class="carousel slide mt-1" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="codings.avif" class="d-block w-100" alt="coding" height="330" width="1400">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide Coding-Fever</h5>
+                    <p>Best Coding-Languages Experiences by MrProds.</p>
+                    <button class="btn btn-primary"> Products </button>
+                    <button class="btn btn-danger"> Dealings </button>
+                    <button class="btn btn-secondary"> Events </button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="webDesign.avif" class="d-block w-100" alt="web-layouts" height="330" width="1400">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: #000; font-weight: bolder;">Second slide Web-Designs</h5>
+                    <p style="color: #000; font-weight: bolder;">Best Web-Designing Experiences by MrProds.</p>
+                    <button class="btn btn-primary"> Products </button>
+                    <button class="btn btn-danger"> Dealings </button>
+                    <button class="btn btn-secondary"> Events </button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="games.avif" class="d-block w-100" alt="..." height="330" width="1400">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide Games</h5>
+                    <p>Best Game-Development Experiences by MrProds.</p>
+                    <button class="btn btn-primary"> Products </button>
+                    <button class="btn btn-danger"> Dealings </button>
+                    <button class="btn btn-secondary"> Events </button>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> <!-- img slider ended -->
+
+
+
+    <!-- creating img-cards -->
+    <div class="container-fluid" style="display: flex; justify-content: space-between;">
+        <div class="row align-items-start" style="margin: auto;">
+            <div class="col my-3">
+                <div
+                    style="padding: 2px; width: 23vw; height: 41vh; text-align: justify; border: 1px solid #000; border-radius: 5px; box-shadow: 0 0 2px #000;">
+                    <img src="frontend courses2.jpg" alt="courses" height="200" width="100%"
+                        style="border: 1px solid #000;">
+                    <p class="card-text mt-2">As a web developer, the three main languages we use to build websites are
+                        HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+
+            <div class="col my-3">
+                <div
+                    style="padding: 2px; width: 23vw; height: 41vh; text-align: justify; border: 1px solid #000; border-radius: 5px; box-shadow: 0 0 2px #000;">
+                    <img src="fe2 courses.jpg" alt="courses" height="200" width="100%" style="border: 1px solid #000;">
+                    <p class="card-text mt-2">Bootstrap, the world's most popular framework for building responsive,
+                        jQuery is a fast, small, and feature-rich JavaScript library.</p>
+                </div>
+            </div>
+
+            <div class="col my-3">
+                <div
+                    style="padding: 2px; width: 23vw; height: 41vh; text-align: justify; border: 1px solid #000; border-radius: 5px; box-shadow: 0 0 2px #000;">
+                    <img src="backend courses.png" alt="courses" height="200" width="100%"
+                        style="border: 1px solid #000;">
+                    <p class="card-text mt-2">Back-end languages are what programmers use to create the internal systems
+                        that work in the background of a web application.</p>
+                </div>
+            </div>
+
+            <div class="col my-3">
+                <div
+                    style="padding: 2px; width: 23vw; height: 41vh; text-align: justify; border: 1px solid #000; border-radius: 5px; box-shadow: 0 0 2px #000;">
+                    <img src="webProjects.png" alt="courses" height="200" width="100%" style="border: 1px solid #000;">
+                    <p class="card-text mt-2">Web Development Projects for Beginners design Product Landing Page Netflix
+                        Home Page Clone Background Generator Quiz App. etc...</p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- img-cards ended -->
+
+
+
+    <!-- creating home description -->
+    <div style="display: flex; justify-content: center; align-items: center; flex-flow: column; text-align: justify; font-weight: 500; letter-spacing: 1px;"
+        class="bg-info py-4 px-5">
+        <p style="display: flex; justify-content: center; align-items: center; flex-flow: column;" class="text-light">
+            <span> WELCOME TO <span style="color: #ff0;" class="fw-bolder fst-italic">MrProds</span> </span> <br>
+            MAKING CODERS GLOBALLY <br>
+            MrProds is a very suitable platform in the noble field of Web-Delivery Products in various segments
+            including Self projecting, Academic programs, Web-enrolling, Corporate trainings, Skilling and vocational
+            trainings including
+            Government projects through quality learning. MrProds is one of the best platform for gaming , coding
+            courses,dealings of web-products etc... education network with 600+ training centres in 19 countries and
+            is reputed for its quality, brand and vendor certification.
+        </p>
+        <p> © 2022 Company, Inc. All rights reserved. </p>
+    </div> <!-- description ended -->
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>
